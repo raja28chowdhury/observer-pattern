@@ -4,10 +4,10 @@
 
 class PhoneDisplay: public IObserver
 {
-	WeatherStation* weather_obj;
+	WeatherStation& weather_obj;
 public:
 
-	PhoneDisplay(WeatherStation* obj);
+	PhoneDisplay(WeatherStation& obj);
 
 	void update();
 };

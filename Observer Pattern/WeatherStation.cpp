@@ -1,10 +1,10 @@
 #include "WeatherStation.h"
 
-void WeatherStation::add(IObserver* obj) {
-	list_of_observers.push_back(obj);
+void WeatherStation::add(IObserver& obj) {
+	list_of_observers.push_back(&obj);
 
 }
-void WeatherStation::remove(IObserver* obj) {
+void WeatherStation::remove(IObserver& obj) {
 
 }
 void WeatherStation::notify() {

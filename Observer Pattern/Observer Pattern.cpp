@@ -13,17 +13,17 @@ int main()
     //observable is something we can observe like weatherstation
     //observer is sommething that observes weatherstation like phonedisaplay
 
-    WeatherStation *mumbai_weather_station = new WeatherStation();
+    WeatherStation mumbai_weather_station;
 
-    PhoneDisplay* xiomi_phone = new PhoneDisplay(mumbai_weather_station);
-    PhoneDisplay* asus_phone = new PhoneDisplay(mumbai_weather_station);
-    PhoneDisplay* samsung_phone = new PhoneDisplay(mumbai_weather_station);
+    PhoneDisplay xiomi_phone(mumbai_weather_station);
+    PhoneDisplay asus_phone(mumbai_weather_station);
+    PhoneDisplay samsung_phone(mumbai_weather_station);
 
-    mumbai_weather_station->add(xiomi_phone);
-    mumbai_weather_station->add(asus_phone);
-    mumbai_weather_station->add(samsung_phone);
+    mumbai_weather_station.add(xiomi_phone);
+    mumbai_weather_station.add(asus_phone);
+    mumbai_weather_station.add(samsung_phone);
 
-    mumbai_weather_station->notify();
+    mumbai_weather_station.notify();
 
 
 

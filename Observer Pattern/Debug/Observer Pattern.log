@@ -1,2 +1,6 @@
-﻿  Observer Pattern.cpp
+﻿  IObservabe.cpp
+  Observer Pattern.cpp
+  PhoneDisplay.cpp
+  WeatherStation.cpp
+  Generating Code...
   Observer Pattern.vcxproj -> G:\My Drive\design pattern code\Observer Pattern\Debug\Observer Pattern.exe

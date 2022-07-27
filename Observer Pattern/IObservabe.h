@@ -8,9 +8,10 @@
 
 class IObservabe
 {
+
 public:
-	virtual void add(IObserver * obj) = 0;
-	virtual void remove(IObserver* obj) = 0;
+	virtual void add(IObserver & obj) = 0;
+	virtual void remove(IObserver& obj) = 0;
 	virtual void notify() = 0;
 };
 
