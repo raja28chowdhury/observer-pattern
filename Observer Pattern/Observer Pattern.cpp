@@ -13,7 +13,8 @@ int main()
     //observable is something we can observe like weatherstation
     //observer is sommething that observes weatherstation like phonedisaplay
 
-    WeatherStation *mumbai_weather_station = new WeatherStation();
+    //WeatherStation *mumbai_weather_station = new WeatherStation();
+    std::shared_ptr<WeatherStation> mumbai_weather_station = std::make_shared<WeatherStation>();
 
     PhoneDisplay* xiomi_phone = new PhoneDisplay(mumbai_weather_station);
     PhoneDisplay* asus_phone = new PhoneDisplay(mumbai_weather_station);

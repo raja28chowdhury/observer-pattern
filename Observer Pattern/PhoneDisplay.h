@@ -4,10 +4,11 @@
 
 class PhoneDisplay: public IObserver
 {
-	WeatherStation* weather_obj;
+	const std::shared_ptr<WeatherStation> weather_obj;
+	
 public:
 
-	PhoneDisplay(WeatherStation* obj);
+	PhoneDisplay(std::shared_ptr<WeatherStation> obj) :weather_obj(obj) {}
 
 	void update();
 };
